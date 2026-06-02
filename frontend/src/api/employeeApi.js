@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = '/api/employees';
+const API = 'https://crudapp-production-104c.up.railway.app/api/employees';
 
 export const getEmployees    = ()         => axios.get(API);
 export const getEmployee     = (id)       => axios.get(`${API}/${id}`);
